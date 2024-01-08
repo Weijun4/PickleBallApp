@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/background"/>
+
+    <EditText
+        android:id="@+id/playerInput"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        app:layout_constraintWidth_percent="0.35"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/editext_border"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="177dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/courtInput"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        app:layout_constraintWidth_percent="0.35"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/editext_border"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="254dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Players:"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <TextView
+        android:id="@+id/courtText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Courts:"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
