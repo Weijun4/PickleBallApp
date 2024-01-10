@@ -2,7 +2,7 @@ package com.example.pickleballapp;
 import java.util.ArrayList;
 public class TableBuilder {
     public int players;
-    public ArrayList<Players> eligiblePlayers;
+    public ArrayList<Player> eligiblePlayers;
     public int courts;
     public int rounds;
 
