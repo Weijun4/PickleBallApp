@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="176dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="177dp"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        android:text="Sign-Up"
+
+        android:textColor="@color/black"
+
+        android:textSize="64dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.72"
+
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/playerInput"
+
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="180dp"
+
+        android:background="@drawable/editext_border"
+        android:ems="10"
+        android:gravity="center"
+
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.18" />
+
+    <EditText
+        android:id="@+id/courtInput"
+
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="240dp"
+
+        android:background="@drawable/editext_border"
+        android:ems="10"
+        android:gravity="center"
+
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.18" />
+
+    <EditText
+        android:id="@+id/gameInput"
+
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="300dp"
+
+        android:background="@drawable/editext_border"
+        android:ems="10"
+        android:gravity="center"
+
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.18" />
+
+    <TextView
+        android:id="@+id/playerText"
+
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="180dp"
+
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Players:"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/courtText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="240dp"
+
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Courts:"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/gameText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="300dp"
+
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Games:"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/outputTable"
+
+        android:layout_width="157dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="452dp"
+
+        android:layout_marginTop="180dp"
+        android:background="@drawable/textview_radius"
+        android:text="Output Table"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:textSize="32dp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintWidth_percent="0.64" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset"
+        android:layout_width="125dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="640dp"
+
+        android:layout_marginTop="180dp"
+        android:background="@drawable/textview_radius"
+
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintWidth_percent="0.64" />
+
+    <TextView
+        android:id="@+id/topBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        android:background="@color/black"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bottomBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        android:background="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="891dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
