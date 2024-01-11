@@ -4,45 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
 
-    <TextView
-        android:id="@+id/topBar2"
-
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-
-        android:background="@color/black"
-
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/bottomBar2"
-
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-
-        android:background="@color/black"
-
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <ImageButton
-        android:id="@+id/homePage"
-
-        android:layout_width="36dp"
-        android:layout_height="100dp"
-
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="131dp"
-        android:layout_marginBottom="131dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489"
-
-        android:background="@color/background"
-
-        app:srcCompat="@drawable/back3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
