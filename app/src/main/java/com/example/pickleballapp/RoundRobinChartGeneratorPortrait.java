@@ -18,7 +18,7 @@ public class RoundRobinChartGeneratorPortrait extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.round_robin_chart_generator_port);
+        setContentView(R.layout.round_robin_chart_generator);
 
         clear = (Button) findViewById(R.id.clear2);
         playerInput = (EditText) findViewById(R.id.playerInput2);
@@ -129,16 +129,5 @@ public class RoundRobinChartGeneratorPortrait extends AppCompatActivity {
                 startActivity(output);
             }
         });
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
-
-        }
     }
 }
