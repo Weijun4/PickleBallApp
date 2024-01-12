@@ -2,6 +2,7 @@ package com.example.pickleballapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -115,7 +116,7 @@ public class RoundRobinChartGenerator extends AppCompatActivity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gameInput.setText("");
+                playerInput.setText("");
                 courtInput.setText("");
                 gameInput.setText("");
             }
@@ -128,5 +129,16 @@ public class RoundRobinChartGenerator extends AppCompatActivity {
                 startActivity(output);
             }
         });
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+
+        }
     }
 }

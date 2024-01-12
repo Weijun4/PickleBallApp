@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.res.Configuration;
 
 public class RoundRobinChartGeneratorPortrait extends AppCompatActivity {
     Button clear;
@@ -17,13 +18,13 @@ public class RoundRobinChartGeneratorPortrait extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.round_robin_chart_generator_land);
+        setContentView(R.layout.round_robin_chart_generator_port);
 
-        clear = (Button) findViewById(R.id.clear);
-        playerInput = (EditText) findViewById(R.id.playerInput);
-        courtInput = (EditText) findViewById(R.id.courtInput);
-        gameInput = (EditText) findViewById(R.id.gameInput);
-        createRRChart = (Button) findViewById(R.id.createRRChart);
+        clear = (Button) findViewById(R.id.clear2);
+        playerInput = (EditText) findViewById(R.id.playerInput2);
+        courtInput = (EditText) findViewById(R.id.courtInput2);
+        gameInput = (EditText) findViewById(R.id.gameInput2);
+        createRRChart = (Button) findViewById(R.id.createRRChart2);
 
         playerInput.setOnFocusChangeListener(new View.OnFocusChangeListener(){
             @Override
@@ -115,7 +116,7 @@ public class RoundRobinChartGeneratorPortrait extends AppCompatActivity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gameInput.setText("");
+                playerInput.setText("");
                 courtInput.setText("");
                 gameInput.setText("");
             }
@@ -128,5 +129,16 @@ public class RoundRobinChartGeneratorPortrait extends AppCompatActivity {
                 startActivity(output);
             }
         });
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+
+        }
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoundRobinChartGenerator">
+    tools:context=".RoundRobinChartGeneratorPortrait">
 
     <TextView
         android:layout_width="match_parent"
@@ -45,13 +45,13 @@
         app:layout_constraintWidth_percent="0.72"/>
 
     <TextView
-        android:id="@+id/playerText"
+        android:id="@+id/playerText2"
 
         android:layout_width="0dp"
         android:layout_height="52dp"
 
         android:layout_marginLeft="94dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="220dp"
 
         android:background="@drawable/textview_radius"
         android:gravity="center"
@@ -67,12 +67,12 @@
         app:layout_constraintWidth_percent="0.28" />
 
     <TextView
-        android:id="@+id/courtText"
+        android:id="@+id/courtText2"
         android:layout_width="0dp"
         android:layout_height="52dp"
 
         android:layout_marginLeft="94dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="300dp"
 
         android:background="@drawable/textview_radius"
         android:gravity="center"
@@ -88,12 +88,12 @@
         app:layout_constraintWidth_percent="0.28" />
 
     <TextView
-        android:id="@+id/gameText"
+        android:id="@+id/gameText2"
         android:layout_width="0dp"
         android:layout_height="52dp"
 
         android:layout_marginLeft="94dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="380dp"
 
         android:background="@drawable/textview_radius"
         android:gravity="center"
@@ -109,13 +109,13 @@
         app:layout_constraintWidth_percent="0.28" />
 
     <EditText
-        android:id="@+id/playerInput"
+        android:id="@+id/playerInput2"
 
         android:layout_width="0dp"
         android:layout_height="52dp"
 
         android:layout_marginLeft="208dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="220dp"
 
         android:background="@drawable/editext_border"
         android:ems="10"
@@ -125,29 +125,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.18" />
+        app:layout_constraintWidth_percent="0.28" />
 
     <EditText
-        android:id="@+id/courtInput"
-
-        android:layout_width="0dp"
-        android:layout_height="52dp"
-
-        android:layout_marginLeft="208dp"
-        android:layout_marginTop="240dp"
-
-        android:background="@drawable/editext_border"
-        android:ems="10"
-        android:gravity="center"
-
-        android:inputType="number"
-        app:layout_constraintLeft_toLeftOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.18" />
-
-    <EditText
-        android:id="@+id/gameInput"
+        android:id="@+id/courtInput2"
 
         android:layout_width="0dp"
         android:layout_height="52dp"
@@ -163,16 +144,35 @@
         app:layout_constraintLeft_toLeftOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.18" />
+        app:layout_constraintWidth_percent="0.28" />
+
+    <EditText
+        android:id="@+id/gameInput2"
+
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="380dp"
+
+        android:background="@drawable/editext_border"
+        android:ems="10"
+        android:gravity="center"
+
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.28" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/createRRChart"
+        android:id="@+id/createRRChart2"
 
-        android:layout_width="157dp"
-        android:layout_height="172dp"
-        android:layout_marginLeft="452dp"
+        android:layout_width="0dp"
+        android:layout_height="134dp"
+        android:layout_marginLeft="94dp"
 
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="472dp"
         android:background="@drawable/textview_radius"
         android:text="Create RR Chart"
         android:textAllCaps="false"
@@ -184,15 +184,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintWidth_percent="0.64" />
+        app:layout_constraintWidth_percent="0.56" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/clear"
-        android:layout_width="125dp"
-        android:layout_height="172dp"
-        android:layout_marginLeft="640dp"
+        android:id="@+id/clear2"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="94dp"
 
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="636dp"
         android:background="@drawable/textview_radius"
 
         android:text="Clear"
@@ -204,10 +204,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintWidth_percent="0.64" />
+        app:layout_constraintWidth_percent="0.56" />
 
     <TextView
-        android:id="@+id/topBar"
+        android:id="@+id/topBar2"
 
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -224,7 +224,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/bottomBar"
+        android:id="@+id/bottomBar2"
 
         android:layout_width="match_parent"
         android:layout_height="10dp"
