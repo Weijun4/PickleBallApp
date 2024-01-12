@@ -14,12 +14,6 @@ public class TablePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.created_round_robin_chart);
 
-        homepage = (ImageButton) findViewById(R.id.homePage);
-        homepage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
     }
 }
