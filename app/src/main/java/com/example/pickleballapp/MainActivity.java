@@ -24,5 +24,32 @@ public class MainActivity extends AppCompatActivity {
         courtInput = (EditText) findViewById(R.id.courtInput);
         gameInput = (EditText) findViewById(R.id.gameInput);
         outputTable = (Button) findViewById(R.id.createRRChart);
+
+        playerInput.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+            @Override
+            public void onFocusChange(View v, boolean hasFocus){
+                if(!hasFocus) {
+                    checkPlayerInput();
+                }
+            }
+
+            private void checkPlayerInput() {
+                String strNumOfPlayers = playerInput.getText().toString();
+                if(!strNumOfPlayers.isEmpty()){
+                    try {
+                        int intNumOfPlayers = Integer.parseInt(strNumOfPlayers);
+                        if (intNumOfPlayers < 8 || intNumOfPlayers > 40){
+                            playerInput.setText("");
+
+                        }
+                    }catch (NumberFormatException e){
+                        playerInput.setText("");
+
+                    }
+                }
+            }
+
+
+        });
     }
 }
