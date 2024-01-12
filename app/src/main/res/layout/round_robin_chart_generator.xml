@@ -163,4 +163,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.18" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/outputTable"
+
+        android:layout_width="157dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="452dp"
+
+        android:layout_marginTop="180dp"
+        android:background="@drawable/textview_radius"
+        android:text="Output Table"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:textSize="32dp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintWidth_percent="0.64" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
