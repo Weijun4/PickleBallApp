@@ -24,4 +24,24 @@
         android:background="@color/background"
 
         app:srcCompat="@drawable/back3" />
+
+    <TextView
+        android:id="@+id/topBar2"
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        android:background="@color/black"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bottomBar2"
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        android:background="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
