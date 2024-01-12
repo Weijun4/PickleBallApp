@@ -34,7 +34,7 @@
 
         android:textColor="@color/black"
 
-        android:textSize="48dp"
+        android:textSize="44dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
 

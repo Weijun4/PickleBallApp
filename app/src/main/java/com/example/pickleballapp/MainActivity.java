@@ -11,9 +11,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     Button clear;
     Button createRRChart;
-    EditText playerInput;
-    EditText courtInput;
     EditText gameInput;
+    EditText courtInput;
+    EditText playerInput;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,10 +54,68 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        courtInput.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+            @Override
+            public void onFocusChange(View v, boolean hasFocus){
+                if(!hasFocus) {
+                    checkCourtInput();
+                }
+            }
+
+            private void checkCourtInput() {
+                String strNumOfCourts = courtInput.getText().toString();
+                if(!strNumOfCourts.isEmpty()){
+                    try {
+                        int intNumOfCourts = Integer.parseInt(strNumOfCourts);
+                        if (intNumOfCourts <= 0){
+                            courtInput.setText("");
+                            showToast("Please input a number greater than 0.");
+                        }
+                    }catch (NumberFormatException e){
+                        courtInput.setText("");
+                        showToast("Please input a number.");
+                    }
+                }
+            }
+
+            private void showToast(String notice) {
+                Toast.makeText(getApplicationContext(), notice, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        gameInput.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+            @Override
+            public void onFocusChange(View v, boolean hasFocus){
+                if(!hasFocus) {
+                    checkGameInput();
+                }
+            }
+
+            private void checkGameInput() {
+                String strNumOfGames = gameInput.getText().toString();
+                if(!strNumOfGames.isEmpty()){
+                    try {
+                        int intNumOfGames = Integer.parseInt(strNumOfGames);
+                        if (intNumOfGames <= 0){
+                            gameInput.setText("");
+                            showToast("Please input a number greater than 0.");
+                        }
+                    }catch (NumberFormatException e){
+                        gameInput.setText("");
+                        showToast("Please input a number.");
+                    }
+                }
+            }
+
+            private void showToast(String notice) {
+                Toast.makeText(getApplicationContext(), notice, Toast.LENGTH_SHORT).show();
+            }
+        });
+
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playerInput.setText("");
+                gameInput.setText("");
                 courtInput.setText("");
                 gameInput.setText("");
             }
