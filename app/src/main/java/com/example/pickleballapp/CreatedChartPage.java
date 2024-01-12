@@ -6,7 +6,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TablePage extends AppCompatActivity {
+public class CreatedChartPage extends AppCompatActivity {
 
     ImageButton homepage;
     @Override

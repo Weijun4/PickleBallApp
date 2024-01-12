@@ -12,14 +12,16 @@
         android:background="@color/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
 
         android:layout_width="0dp"
-        android:layout_height="88dp"
+        android:layout_height="110dp"
         android:layout_marginStart="176dp"
 
         android:layout_marginTop="50dp"
@@ -48,7 +50,7 @@
         android:layout_width="0dp"
         android:layout_height="52dp"
 
-        android:layout_marginLeft="124dp"
+        android:layout_marginLeft="94dp"
         android:layout_marginTop="180dp"
 
         android:background="@drawable/textview_radius"
@@ -62,14 +64,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.15" />
+        app:layout_constraintWidth_percent="0.28" />
 
     <TextView
         android:id="@+id/courtText"
         android:layout_width="0dp"
         android:layout_height="52dp"
 
-        android:layout_marginLeft="124dp"
+        android:layout_marginLeft="94dp"
         android:layout_marginTop="240dp"
 
         android:background="@drawable/textview_radius"
@@ -83,14 +85,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.15" />
+        app:layout_constraintWidth_percent="0.28" />
 
     <TextView
         android:id="@+id/gameText"
         android:layout_width="0dp"
         android:layout_height="52dp"
 
-        android:layout_marginLeft="124dp"
+        android:layout_marginLeft="94dp"
         android:layout_marginTop="300dp"
 
         android:background="@drawable/textview_radius"
@@ -104,7 +106,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.15" />
+        app:layout_constraintWidth_percent="0.28" />
 
     <EditText
         android:id="@+id/playerInput"
@@ -112,7 +114,7 @@
         android:layout_width="0dp"
         android:layout_height="52dp"
 
-        android:layout_marginLeft="256dp"
+        android:layout_marginLeft="208dp"
         android:layout_marginTop="180dp"
 
         android:background="@drawable/editext_border"
@@ -131,7 +133,7 @@
         android:layout_width="0dp"
         android:layout_height="52dp"
 
-        android:layout_marginLeft="256dp"
+        android:layout_marginLeft="208dp"
         android:layout_marginTop="240dp"
 
         android:background="@drawable/editext_border"
@@ -150,7 +152,7 @@
         android:layout_width="0dp"
         android:layout_height="52dp"
 
-        android:layout_marginLeft="256dp"
+        android:layout_marginLeft="208dp"
         android:layout_marginTop="300dp"
 
         android:background="@drawable/editext_border"

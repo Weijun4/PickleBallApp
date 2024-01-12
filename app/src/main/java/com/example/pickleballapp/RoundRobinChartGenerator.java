@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class RoundRobinChartGenerator extends AppCompatActivity {
     Button clear;
     Button createRRChart;
     EditText gameInput;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         createRRChart.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent output = new Intent(MainActivity.this, TablePage.class);
+                Intent output = new Intent(RoundRobinChartGenerator.this, CreatedChartPage.class);
                 startActivity(output);
             }
         });
