@@ -164,7 +164,7 @@
         app:layout_constraintWidth_percent="0.18" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/outputTable"
+        android:id="@+id/createRRChart"
 
         android:layout_width="157dp"
         android:layout_height="172dp"
@@ -172,7 +172,7 @@
 
         android:layout_marginTop="180dp"
         android:background="@drawable/textview_radius"
-        android:text="Output Table"
+        android:text="Create RR Chart"
         android:textAllCaps="false"
         android:textColor="@color/white"
 
@@ -185,7 +185,7 @@
         app:layout_constraintWidth_percent="0.64" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/reset"
+        android:id="@+id/clear"
         android:layout_width="125dp"
         android:layout_height="172dp"
         android:layout_marginLeft="640dp"
@@ -193,7 +193,7 @@
         android:layout_marginTop="180dp"
         android:background="@drawable/textview_radius"
 
-        android:text="Reset"
+        android:text="Clear"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="32dp"
