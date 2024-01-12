@@ -62,5 +62,13 @@ public class MainActivity extends AppCompatActivity {
                 gameInput.setText("");
             }
         });
+
+        outputTable.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent output = new Intent(MainActivity.this, TablePage.class);
+                startActivity(output);
+            }
+        });
     }
 }
