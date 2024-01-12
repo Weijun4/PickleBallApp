@@ -208,8 +208,15 @@
         android:id="@+id/topBar"
 
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="20dp"
 
+        android:text="B e n d        P i c k l e b a l l        C l u b"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="italic"
+
+
+        android:gravity="center"
         android:background="@color/black"
 
         app:layout_constraintTop_toTopOf="parent" />
