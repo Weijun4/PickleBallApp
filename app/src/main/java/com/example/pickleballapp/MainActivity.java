@@ -9,8 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button reset;
-    Button outputTable;
+    Button clear;
+    Button createRRChart;
     EditText playerInput;
     EditText courtInput;
     EditText gameInput;
@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.round_robin_chart_generator);
 
-        reset = (Button) findViewById(R.id.clear);
+        clear = (Button) findViewById(R.id.clear);
         playerInput = (EditText) findViewById(R.id.playerInput);
         courtInput = (EditText) findViewById(R.id.courtInput);
         gameInput = (EditText) findViewById(R.id.gameInput);
-        outputTable = (Button) findViewById(R.id.createRRChart);
+        createRRChart = (Button) findViewById(R.id.createRRChart);
 
         playerInput.setOnFocusChangeListener(new View.OnFocusChangeListener(){
             @Override
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        reset.setOnClickListener(new View.OnClickListener() {
+        clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 playerInput.setText("");
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        outputTable.setOnClickListener(new View.OnClickListener(){
+        createRRChart.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent output = new Intent(MainActivity.this, TablePage.class);
