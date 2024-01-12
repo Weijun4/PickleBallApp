@@ -42,4 +42,68 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.72"/>
 
+    <TextView
+        android:id="@+id/playerText"
+
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="180dp"
+
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Players:"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/courtText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="240dp"
+
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Courts:"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/gameText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="300dp"
+
+        android:background="@drawable/textview_radius"
+        android:gravity="center"
+        android:text="Games:"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.15" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
