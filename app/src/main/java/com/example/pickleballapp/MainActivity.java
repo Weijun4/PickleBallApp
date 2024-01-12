@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.round_robin_chart_generator);
+        setContentView(R.layout.round_robin_chart_generator_land);
 
         clear = (Button) findViewById(R.id.clear);
         playerInput = (EditText) findViewById(R.id.playerInput);

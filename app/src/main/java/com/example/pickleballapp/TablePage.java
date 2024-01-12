@@ -12,7 +12,7 @@ public class TablePage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.created_round_robin_chart);
+        setContentView(R.layout.created_round_robin_chart_land);
 
         homepage = (ImageButton) findViewById(R.id.homePage);
         homepage.setOnClickListener(new View.OnClickListener() {
