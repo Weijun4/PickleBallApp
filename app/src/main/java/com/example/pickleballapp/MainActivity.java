@@ -53,5 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), notice, Toast.LENGTH_SHORT).show();
             }
         });
+
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playerInput.setText("");
+                courtInput.setText("");
+                gameInput.setText("");
+            }
+        });
     }
 }
