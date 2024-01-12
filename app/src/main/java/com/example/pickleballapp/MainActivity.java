@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.round_robin_chart_generator);
 
-
+        reset = (Button) findViewById(R.id.clear);
+        playerInput = (EditText) findViewById(R.id.playerInput);
+        courtInput = (EditText) findViewById(R.id.courtInput);
+        gameInput = (EditText) findViewById(R.id.gameInput);
+        outputTable = (Button) findViewById(R.id.createRRChart);
     }
 }
