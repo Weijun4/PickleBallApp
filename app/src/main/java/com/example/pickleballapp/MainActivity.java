@@ -40,16 +40,18 @@ public class MainActivity extends AppCompatActivity {
                         int intNumOfPlayers = Integer.parseInt(strNumOfPlayers);
                         if (intNumOfPlayers < 8 || intNumOfPlayers > 40){
                             playerInput.setText("");
-
+                            showToast("Please input a number between 8 and 40.");
                         }
                     }catch (NumberFormatException e){
                         playerInput.setText("");
-
+                        showToast("Please input a number.");
                     }
                 }
             }
 
-
+            private void showToast(String notice) {
+                Toast.makeText(getApplicationContext(), notice, Toast.LENGTH_SHORT).show();
+            }
         });
     }
 }
